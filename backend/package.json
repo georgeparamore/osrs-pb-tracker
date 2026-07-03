@@ -1,0 +1,19 @@
+{
+  "name": "pb-tracker-backend",
+  "version": "1.0.0",
+  "description": "Backend API + static host for the OSRS PB Tracker site",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

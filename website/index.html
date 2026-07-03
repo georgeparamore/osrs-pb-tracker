@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OSRS PB Tracker</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1><span class="accent">PB</span> Tracker</h1>
+      <p class="subtitle">Old School RuneScape boss personal best records</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="search-card">
+      <form id="search-form" autocomplete="off">
+        <input id="search-input" type="text" placeholder="Look up a player, e.g. Blitzen" />
+        <button type="submit">Search</button>
+      </form>
+      <div id="search-suggestions" class="suggestions"></div>
+    </section>
+
+    <section class="boss-select-card">
+      <label for="boss-select">Or browse a leaderboard:</label>
+      <select id="boss-select">
+        <option value="">Loading bosses...</option>
+      </select>
+    </section>
+
+    <section id="results"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      Data synced from the <strong>PB Tracker Sync</strong> RuneLite plugin.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
